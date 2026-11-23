@@ -9,10 +9,7 @@ int part1() {
     while(fscanf(fp, "%d,", &buf) == 1) {
         int x = 1;
         while (1) {
-            if ((x * x)  == buf) {
-                sum += 0;
-                break;
-            }
+            if ((x * x)  == buf break;
             else if ((x * x) > buf) {
                 sum += ((x * x) - buf);
                 break;
@@ -70,7 +67,6 @@ int part3() {
     fclose(fp);
     return sum;
 }
-
 
 int main () {
     printf("Part 1: %d\n", part1());
